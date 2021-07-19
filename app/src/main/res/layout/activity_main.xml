@@ -31,4 +31,13 @@
         android:textAllCaps="false"
         android:textColor="#121212" />
 
+    <Button
+        android:id="@+id/btn_scrollSimple"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Scroll自定义滑动"
+        android:textAllCaps="false"
+        android:textColor="#121212" />
+
 </LinearLayout>

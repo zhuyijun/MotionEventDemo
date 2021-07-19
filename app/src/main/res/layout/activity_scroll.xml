@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zyj.motion.scroll.ScrollSimpleView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/scrollItem01"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@android:color/holo_red_dark"
+            android:gravity="center"
+            android:text="Content Item 01"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/scrollItem02"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:text="Content Item 02"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/scrollItem03"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_blue_light"
+            android:gravity="center"
+            android:text="Content Item 03"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/scrollItem04"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_green_light"
+            android:gravity="center"
+            android:text="Content Item 04"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp" />
+
+    </com.zyj.motion.scroll.ScrollSimpleView>
+
+</FrameLayout>

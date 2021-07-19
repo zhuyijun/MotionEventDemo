@@ -28,6 +28,9 @@
         <activity
             android:name=".touch.TouchDrawActivity"
             android:theme="@style/MainActivity.Theme" />
+        <activity
+            android:name=".scroll.ScrollActivity"
+            android:theme="@style/MainActivity.Theme" />
     </application>
 
 </manifest>

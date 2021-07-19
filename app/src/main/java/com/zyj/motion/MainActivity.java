@@ -6,9 +6,9 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.zyj.motion.scroll.ScrollActivity;
 import com.zyj.motion.touch.TouchActivity;
 import com.zyj.motion.touch.TouchDrawActivity;
-import com.zyj.motion.touch.TouchDrawView;
 import com.zyj.motion.touch.TouchStickyActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -36,6 +36,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, TouchDrawActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.btn_scrollSimple).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ScrollActivity.class);
                 startActivity(intent);
             }
         });

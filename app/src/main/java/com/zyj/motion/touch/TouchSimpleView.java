@@ -62,8 +62,8 @@ public class TouchSimpleView extends View {
                 int moveY = (int) event.getRawY();
 
                 //获取两次之间的移动的距离差
-                int dX = mLastX - moveX;
-                int dY = mLastY - moveY;
+                int dX = moveX - mLastX;
+                int dY = moveY - mLastY;
 
                 //view移动方法一
                 layout(getLeft() + dX, getTop() + dY, getRight() + dX, getBottom() + dY);
