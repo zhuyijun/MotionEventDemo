@@ -4,5 +4,31 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <Button
+        android:id="@+id/btn_touch01"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Touch移动的几种方式"
+        android:textAllCaps="false"
+        android:textColor="#121212" />
+
+    <Button
+        android:id="@+id/btn_touchSticky"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Touch边界判断和贴边"
+        android:textAllCaps="false"
+        android:textColor="#121212" />
+
+    <Button
+        android:id="@+id/btn_touchDraw"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Touch移动画矩形"
+        android:textAllCaps="false"
+        android:textColor="#121212" />
 
 </LinearLayout>

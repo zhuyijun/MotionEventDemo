@@ -19,6 +19,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".touch.TouchActivity"
+            android:theme="@style/MainActivity.Theme" />
+        <activity
+            android:name=".touch.TouchStickyActivity"
+            android:theme="@style/MainActivity.Theme" />
+        <activity
+            android:name=".touch.TouchDrawActivity"
+            android:theme="@style/MainActivity.Theme" />
     </application>
 
 </manifest>
