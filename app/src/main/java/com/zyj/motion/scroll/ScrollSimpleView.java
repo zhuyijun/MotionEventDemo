@@ -30,11 +30,30 @@ public class ScrollSimpleView extends LinearLayout {
 
     /**
      * 滑动辅助类
+     * 一般使用步骤：
+     * 1：初始化：OverScroller mOverScroller = new OverScroller(context)
+     * 2：重写computeScroll()：
+     * if (mOverScroller.computeScrollOffset()) {
+     * scrollTo(mOverScroller.getCurrX(), mOverScroller.getCurrY());
+     * invalidate();
+     * }
+     * 3：结合VelocityTracker的计算速率开启滑动：
+     * mOverScroller.fling(0, getScrollY(), 0, -yVelocity, 0, 0, -0, mMaxScrollDistance);
+     * invalidate();
      */
     private OverScroller mOverScroller;
 
     /**
      * 惯性滑动计算
+     * 一般使用步骤：
+     * 1：初始化： VelocityTracker mVelocityTracker = = VelocityTracker.obtain()
+     * 2：添加事件：mVelocityTracker.addMovement(event)
+     * 3：计算滑动速率: mVelocityTracker.computeCurrentVelocity(1000, scaledMaximumFlingVelocity)
+     * 4: 获取相应滑动速率：int yVelocity = (int) mVelocityTracker.getYVelocity()
+     * 5：开启惯性滑动：
+     * mOverScroller.fling(0, getScrollY(), 0, -yVelocity, 0, 0, -0, mMaxScrollDistance);
+     * invalidate();
+     * 6：回收： mVelocityTracker.recycle();
      */
     private VelocityTracker mVelocityTracker;
 
