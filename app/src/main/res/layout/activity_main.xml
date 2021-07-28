@@ -40,4 +40,31 @@
         android:textAllCaps="false"
         android:textColor="#121212" />
 
+    <Button
+        android:id="@+id/btn_gestureSimple"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Gesture简单使用"
+        android:textAllCaps="false"
+        android:textColor="#121212" />
+
+    <Button
+        android:id="@+id/btn_gestureLight"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Gesture实现屏幕亮度调节"
+        android:textAllCaps="false"
+        android:textColor="#121212" />
+
+    <Button
+        android:id="@+id/btn_gestureScale"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Gesture实现屏图片缩放"
+        android:textAllCaps="false"
+        android:textColor="#121212" />
+
 </LinearLayout>

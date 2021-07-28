@@ -31,6 +31,15 @@
         <activity
             android:name=".scroll.ScrollActivity"
             android:theme="@style/MainActivity.Theme" />
+        <activity
+            android:name=".gesture.GestureActivity"
+            android:theme="@style/MainActivity.Theme" />
+        <activity
+            android:name=".gesture.LightGestureActivity"
+            android:theme="@style/MainActivity.Theme" />
+        <activity
+            android:name=".gesture.GestureScaleActivity"
+            android:theme="@style/MainActivity.Theme" />
     </application>
 
 </manifest>
