@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zyj.motion.sample.EventDispatchParentLayout
+        android:id="@+id/dispatchRootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@id/id_event_dispatch_top"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@android:color/holo_orange_dark">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Top内容区域"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20sp" />
+
+        </FrameLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@id/id_event_dispatch_tab"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@android:color/holo_blue_light" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@id/id_event_dispatch_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.zyj.motion.sample.EventDispatchParentLayout>
+
+</FrameLayout>

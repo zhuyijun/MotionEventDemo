@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="id_event_dispatch_top" type="id" />
+    <item name="id_event_dispatch_tab" type="id" />
+    <item name="id_event_dispatch_viewpager" type="id" />
+    <item name="id_event_dispatch_inner_scroll" type="id"/>
+</resources>

@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.zyj.motion.gesture.GestureActivity;
 import com.zyj.motion.gesture.GestureScaleActivity;
 import com.zyj.motion.gesture.LightGestureActivity;
+import com.zyj.motion.sample.EventDispatchActivity;
 import com.zyj.motion.scroll.ScrollActivity;
 import com.zyj.motion.touch.TouchActivity;
 import com.zyj.motion.touch.TouchDrawActivity;
@@ -67,6 +68,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, GestureScaleActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.btn_eventDispatch).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, EventDispatchActivity.class);
                 startActivity(intent);
             }
         });

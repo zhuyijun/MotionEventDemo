@@ -40,6 +40,9 @@
         <activity
             android:name=".gesture.GestureScaleActivity"
             android:theme="@style/MainActivity.Theme" />
+        <activity
+            android:name=".sample.EventDispatchActivity"
+            android:theme="@style/MainActivity.Theme" />
     </application>
 
 </manifest>
