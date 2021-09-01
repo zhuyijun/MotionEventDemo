@@ -8,11 +8,11 @@ import android.view.VelocityTracker;
 import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.LinearLayout;
 import android.widget.OverScroller;
 
 import androidx.annotation.Nullable;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.zyj.motion.R;
@@ -39,7 +39,7 @@ public class EventDispatchParentLayout extends LinearLayout {
     private View topView;
     private View tabView;
     private ViewPager2 viewPager;
-    private RecyclerView mInnerScrollView;
+    private WebView mInnerScrollView;
 
     private int mTopHeight;
     private int mDownX, mDownY;
@@ -118,7 +118,7 @@ public class EventDispatchParentLayout extends LinearLayout {
                 int dy = (int) (ev.getRawY() - mDownY);
                 int dx = (int) (ev.getRawX() - mDownX);
                 if (Math.abs(dy) > Math.abs(dx) && Math.abs(dy) > scaledTouchSlop) {
-                    if (!mIsTop || ( mInnerScrollView.computeVerticalScrollOffset() == 0 && mIsTop && dy > 0)) {
+                    if (!mIsTop || ( mInnerScrollView.getScrollY() == 0 && mIsTop && dy > 0)) {
                         return true;
                     }
                 }

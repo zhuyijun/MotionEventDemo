@@ -76,4 +76,21 @@
         android:textAllCaps="false"
         android:textColor="#121212" />
 
+    <Button
+        android:id="@+id/btn_nestedScroll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="NestedScrollingParentHelper简单使用"
+        android:textAllCaps="false"
+        android:textColor="#121212" />
+    <Button
+        android:id="@+id/btn_nestedScrollChild"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="NestedScrollingChildHelper简单使用"
+        android:textAllCaps="false"
+        android:textColor="#121212" />
+
 </LinearLayout>

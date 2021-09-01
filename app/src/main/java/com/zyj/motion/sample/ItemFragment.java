@@ -1,17 +1,17 @@
 package com.zyj.motion.sample;
 
-import android.content.Context;
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.zyj.motion.R;
-import com.zyj.motion.sample.dummy.DummyContent;
 
 /**
  * A fragment representing a list of Items.
@@ -51,18 +51,26 @@ public class ItemFragment extends Fragment {
         }
     }
 
+    @SuppressLint("SetJavaScriptEnabled")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         mRootView = inflater.inflate(R.layout.fragment_item_list, container, false);
 
         // Set the adapter
-        if (mRootView instanceof RecyclerView) {
-            Context context = mRootView.getContext();
-            RecyclerView recyclerView = (RecyclerView) mRootView;
-            recyclerView.setLayoutManager(new LinearLayoutManager(context));
-            recyclerView.setAdapter(new MyItemRecyclerViewAdapter(DummyContent.ITEMS));
-        }
+//        if (mRootView instanceof RecyclerView) {
+//            Context context = mRootView.getContext();
+//            RecyclerView recyclerView = (RecyclerView) mRootView;
+//            recyclerView.setLayoutManager(new LinearLayoutManager(context));
+//            recyclerView.setAdapter(new MyItemRecyclerViewAdapter(DummyContent.ITEMS));
+//        }
+        WebView webView = mRootView.findViewById(R.id.id_event_dispatch_inner_scroll);
+        WebSettings settings = webView.getSettings();
+        settings.setJavaScriptEnabled(true);
+
+        webView.setWebViewClient(new WebViewClient());
+        webView.loadUrl("http://www.baidu.com/");
+
         return mRootView;
     }
 

@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.zyj.motion.gesture.GestureActivity;
 import com.zyj.motion.gesture.GestureScaleActivity;
 import com.zyj.motion.gesture.LightGestureActivity;
+import com.zyj.motion.nestedScroll.NestedScrollActivity;
+import com.zyj.motion.nestedScroll.NestedScrollChildActivity;
 import com.zyj.motion.sample.EventDispatchActivity;
 import com.zyj.motion.scroll.ScrollActivity;
 import com.zyj.motion.touch.TouchActivity;
@@ -75,6 +77,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, EventDispatchActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.btn_nestedScroll).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, NestedScrollActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.btn_nestedScrollChild).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, NestedScrollChildActivity.class);
                 startActivity(intent);
             }
         });

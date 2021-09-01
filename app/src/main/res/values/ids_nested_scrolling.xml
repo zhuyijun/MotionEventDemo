@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="id_nested_scrolling_top" type="id" />
+    <item name="id_nested_scrolling_tab" type="id" />
+    <item name="id_nested_scrolling_viewpager" type="id" />
+</resources>
