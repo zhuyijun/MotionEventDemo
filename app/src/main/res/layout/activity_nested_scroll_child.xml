@@ -13,7 +13,6 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@id/id_scrolling_child_top"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
                 android:scaleType="centerCrop"
@@ -21,7 +20,6 @@
                 app:layout_scrollFlags="scroll|exitUntilCollapsed" />
 
             <TextView
-                android:id="@id/id_scrolling_child_tab"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:background="#ffffff"
@@ -35,12 +33,19 @@
 
 
         <com.zyj.motion.nestedScroll.NestedScrollingChildView
-            android:id="@id/id_scrolling_child_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#ffffff"
             android:orientation="vertical"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="Item XXX"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="match_parent"

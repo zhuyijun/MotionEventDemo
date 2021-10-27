@@ -118,12 +118,17 @@ public class EventDispatchParentLayout extends LinearLayout {
                 int dy = (int) (ev.getRawY() - mDownY);
                 int dx = (int) (ev.getRawX() - mDownX);
                 if (Math.abs(dy) > Math.abs(dx) && Math.abs(dy) > scaledTouchSlop) {
-                    if (!mIsTop || ( mInnerScrollView.getScrollY() == 0 && mIsTop && dy > 0)) {
+                    if (!mIsTop || (mInnerScrollView.getScrollY() == 0 && mIsTop && dy > 0)) {
                         return true;
                     }
                 }
                 break;
         }
+        //这个方法是通知父View不要拦截相关触摸事件
+//        ViewParent parent = getParent();
+//        if (parent != null) {
+//            parent.requestDisallowInterceptTouchEvent(true);
+//        }
 
         return super.onInterceptTouchEvent(ev);
     }
