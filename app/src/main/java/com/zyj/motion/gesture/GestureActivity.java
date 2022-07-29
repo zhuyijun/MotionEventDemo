@@ -1,6 +1,7 @@
 package com.zyj.motion.gesture;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,5 +13,7 @@ public class GestureActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gesture);
+
+        Log.i("", "");
     }
 }
