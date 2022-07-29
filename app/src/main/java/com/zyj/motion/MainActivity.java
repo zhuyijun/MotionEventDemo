@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
         Log.i("", "");
 
+        Log.i("zhuyijun", "");
+
         findViewById(R.id.btn_touch01).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
